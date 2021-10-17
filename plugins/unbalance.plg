@@ -1,12 +1,12 @@
 <?xml version='1.0' standalone='yes'?>
 
 <!DOCTYPE PLUGIN [
-<!ENTITY name        "unbalance">
+<!ENTITY name        "unbalance2">
 <!ENTITY author      "Juan B. Rodriguez">
 <!ENTITY version     "v2021.04.21">
 <!ENTITY appver      "5.6.4">
 <!ENTITY launch      "Settings/&name;">
-<!ENTITY pluginURL   "https://raw.githubusercontent.com/jbrodriguez/unraid/master/plugins/&name;.plg">
+<!ENTITY pluginURL   "https://raw.githubusercontent.com/harmo777/unraid/master/plugins/&name;.plg">
 <!ENTITY bundle      "&name;-&appver;.tgz">
 <!ENTITY md5         "c87c4dfecad21f2e6100a4fe541b5c7b">
 ]>
@@ -34,16 +34,16 @@ The plugin frees up space from a disk array in unRAID systems.
 Get the unBALANCE bundle.
 -->
 <FILE Name="/boot/config/plugins/&name;/&bundle;">
-<URL>"https://github.com/jbrodriguez/unbalance/releases/download/&appver;/&bundle;"</URL>
+<URL>"https://github.com/harmo777/unbalance/releases/download/&appver;/&bundle;"</URL>
 <MD5>&md5;</MD5>
 </FILE>
 
 <!-- Install default plugin cfg  -->
-<FILE Name="/boot/config/plugins/unbalance/unbalance.cfg">
+<FILE Name="/boot/config/plugins/unbalance/unbalance2.cfg">
 <INLINE>
 <![CDATA[
 SERVICE="disable"
-PORT="6237"
+PORT="6238"
 RUNAS="nobody"
 ]]>
 </INLINE>
